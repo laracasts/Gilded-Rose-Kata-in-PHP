@@ -17,7 +17,11 @@ class GildedRose
         $this->sellIn = $sellIn;
     }
 
-    public function updateQuality()
+    public static function of($name, $quality, $sellIn) {
+        return new static($name, $quality, $sellIn);
+    }
+
+    public function tick()
     {
         if ($this->name != 'Aged Brie' and $this->name != 'Backstage passes to a TAFKAL80ETC concert') {
             if ($this->quality > 0) {
