@@ -3,13 +3,9 @@
 use App\Item;
 use App\GildedRose;
 
-// Quality = How valuable the item is
-// sellIn = The number of days you have to sell it, before it goes bad.
-// At the end of the day, the system updates the quality.
-
 describe('Gilded Rose', function () {
 
-    describe('#update', function () {
+    describe('#tick', function () {
 
         context ('normal Items', function () {
 

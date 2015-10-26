@@ -11,8 +11,7 @@ class GildedRose
         'Conjured Mana Cake' => Conjured::class
     ];
 
-    public static function of($name, $quality, $sellIn)
-    {
+    public static function of($name, $quality, $sellIn) {
         $class = isset(static::$lookup[$name])
             ? static::$lookup[$name]
             : Item::class;
