@@ -8,10 +8,6 @@ class BackstagePass extends Item
     {
         $this->sellIn -= 1;
 
-        if ($this->quality >= 50) {
-            return;
-        }
-
         if ($this->sellIn < 0) {
             return $this->quality = 0;
         }
@@ -24,6 +20,10 @@ class BackstagePass extends Item
 
         if ($this->sellIn < 5) {
             $this->quality += 1;
+        }
+
+        if ($this->quality > 50) {
+            $this->quality = 50;
         }
     }
 }
