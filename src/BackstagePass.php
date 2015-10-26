@@ -4,7 +4,7 @@ namespace App;
 
 class BackstagePass extends Item
 {
-    public function update()
+    public function tick()
     {
         $this->sellIn -= 1;
 

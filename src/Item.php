@@ -14,5 +14,5 @@ class Item
         $this->sellIn = $sellIn;
     }
 
-    public function update() {}
+    public function tick() {}
 }

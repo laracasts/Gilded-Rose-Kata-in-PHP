@@ -4,7 +4,7 @@ namespace App;
 
 class Conjured extends Item
 {
-    public function update()
+    public function tick()
     {
         $this->sellIn -= 1;
 
@@ -17,7 +17,5 @@ class Conjured extends Item
         if ($this->sellIn <= 0) {
             $this->quality -= 2;
         }
-
-
     }
 }
