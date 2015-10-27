@@ -12,6 +12,9 @@ class GildedRose
 
     public function __construct($name, $quality, $sellIn)
     {
+        if ($name == 'Sulfuras, Hand of Ragnaros') {
+            $quality = 80;
+        }
         $this->name = $name;
         $this->quality = $quality;
         $this->sellIn = $sellIn;

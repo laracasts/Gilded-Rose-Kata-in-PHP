@@ -127,7 +127,7 @@ describe('Gilded Rose', function () {
 
                 $item->tick();
 
-                expect($item->quality)->toBe(10);
+                expect($item->quality)->toBe(80);
                 expect($item->sellIn)->toBe(5);
             });
 
@@ -136,7 +136,7 @@ describe('Gilded Rose', function () {
 
                 $item->tick();
 
-                expect($item->quality)->toBe(10);
+                expect($item->quality)->toBe(80);
                 expect($item->sellIn)->toBe(5);
             });
 
@@ -145,8 +145,14 @@ describe('Gilded Rose', function () {
 
                 $item->tick();
 
-                expect($item->quality)->toBe(10);
+                expect($item->quality)->toBe(80);
                 expect($item->sellIn)->toBe(-1);
+            });
+
+            it ('ensures Sulfuras item quality before tick', function() {
+                $item = GildedRose::of('Sulfuras, Hand of Ragnaros', 10, 5);
+
+                expect($item->quality)->toBe(80);
             });
 
         });
