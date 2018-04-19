@@ -7,8 +7,7 @@ This repository includes the initial setup for this Kata, including the tests. I
 Your job is to:
 
 1. Refactor the monstrous code in the `GildedRose.php` class.
-2. Add a new item type, "Conjured".
-3. Add tests for conjured
+2. Make sure using what you want that all the code works for every product. This may be manual testing or automated tests.
 
 ## Rules
 
