@@ -1,13 +1,10 @@
-# The Gilded Rose Kata
-
-## Setup
-
-This repository includes the initial setup for this Kata, including the tests. It uses the phpunit. Review the tests, and you'll understand the basic syntax in less than a minute.
+# The Gilded Rose Kata - Variance 02
 
 Your job is to:
 
 1. Refactor the monstrous code in the `GildedRose.php` class.
-2. Make sure using what you want that all the code works for every product. This may be manual testing or automated tests.
+2. Add 'Conjuras'
+2. Make sure you tests all the scenarios. This may be manual testing or automated tests.
 
 ## Rules
 
