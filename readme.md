@@ -2,14 +2,13 @@
 
 ## Setup
 
-This repository includes the initial setup for this Kata, including the specs. It uses the [Kahlan library](http://kahlan.readthedocs.org/en/latest/), which you might not be familiar with. But, don't worry, there's nothing really to learn. Review the specs, and you'll understand the basic syntax in less than a minute.
+This repository includes the initial setup for this Kata, including the tests. It uses the phpunit. Review the tests, and you'll understand the basic syntax in less than a minute.
 
 Your job is to:
 
 1. Refactor the monstrous code in the `GildedRose.php` class.
-2. Add a new item type, "Conjured". The specs for this item are commented out in the `GildedRoseSpec.php` file.
-
-When finished (or for help), you may review the solution by switching to the "solution" branch of this repo.
+2. Add a new item type, "Conjured".
+3. Add tests for conjured
 
 ## Rules
 
