@@ -4,7 +4,7 @@ Your job is to:
 
 1. Refactor the monstrous code in the `GildedRose.php` class.
 2. Add 'Conjuras'
-2. Make sure you tests all the scenarios. This may be manual testing or automated tests.
+2. Make sure you test all the scenarios. This may be manual testing or automated tests.
 
 ## Rules
 
