@@ -40,9 +40,8 @@ class GildedRose
             }
         }
 
-        if ($this->name != 'Sulfuras, Hand of Ragnaros') {
-            $this->sellIn = $this->sellIn - 1;
-        }
+        $this->sellIn = ($this->name != 'Sulfuras, Hand of Ragnaros') ? $this->sellIn - 1 : $this->sellIn;
+
 
         if ($this->sellIn < 0) {
             if ($this->name != 'Aged Brie') {
