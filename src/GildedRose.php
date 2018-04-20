@@ -34,8 +34,8 @@ class GildedRose
                 $this->quality = $this->quality + 1;
 
                 if ($this->name == 'Backstage passes to a TAFKAL80ETC concert') {
-                    $this->quality = ($this->sellIn < 11 && $this->quality < 50) ? $this->quality + 1 : $this->quality;
-                    $this->quality = ($this->sellIn < 6 && $this->quality < 50) ? $this->quality + 1 : $this->quality;
+                    $this->quality = ($this->sellIn < 11 AND $this->quality < 50) ? $this->quality + 1 : $this->quality;
+                    $this->quality = ($this->sellIn < 6 AND $this->quality < 50) ? $this->quality + 1 : $this->quality;
                 }
             }
         }
