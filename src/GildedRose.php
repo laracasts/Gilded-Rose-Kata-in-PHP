@@ -42,11 +42,7 @@ class GildedRose
         if ($this->sellIn < 0) {
             if ($this->name != 'Aged Brie') {
                 if ($this->name != 'Backstage passes to a TAFKAL80ETC concert') {
-                    if ($this->quality > 0) {
-                        if ($this->name != 'Sulfuras, Hand of Ragnaros') {
-                            $this->quality = $this->quality - 1;
-                        }
-                    }
+                    $this->quality = ($this->quality > 0 AND $this->name != 'Sulfuras, Hand of Ragnaros') ? $this->quality - 1 : $this->quality - 1;
                 } else {
                     $this->quality = $this->quality - $this->quality;
                 }
