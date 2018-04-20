@@ -39,11 +39,7 @@ class GildedRose
                             $this->quality = $this->quality + 1;
                         }
                     }
-                    if ($this->sellIn < 6) {
-                        if ($this->quality < 50) {
-                            $this->quality = $this->quality + 1;
-                        }
-                    }
+                    $this->quality = ($this->sellIn < 6 && $this->quality < 50) ? $this->quality + 1 : $this->quality;
                 }
             }
         }
