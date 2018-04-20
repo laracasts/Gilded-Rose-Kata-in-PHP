@@ -268,4 +268,46 @@ class GildedRoseTest extends TestCase
         $this->assertEquals(-2, $item->sellIn);
     }
 
+    public function test_conjuras_23q_7d()
+    {
+        $app = GildedRose::of('Conjuras', 23, 7);
+        $app->tick();
+        $this->assertEquals(21, $app->quality);
+        $this->assertEquals(6, $app->sellIn);
+    }
+
+    public function test_conjuras_3q_35d()
+    {
+        $app = GildedRose::of('Conjuras', 3, 35);
+        $app->tick();
+        $this->assertEquals(1, $app->quality);
+        $this->assertEquals(34, $app->sellIn);
+    }
+
+    public function test_conjuras_n5q_3d()
+    {
+        $app = GildedRose::of('Conjuras', -5, 3);
+        $app->tick();
+        $this->assertEquals(-7, $app->quality);
+        $this->assertEquals(2, $app->sellIn);
+    }
+
+
+    public function test_conjuras_n11q_3d()
+    {
+        $app = GildedRose::of('Conjuras', -11, 3);
+        $app->tick();
+        $this->assertEquals(-13, $app->quality);
+        $this->assertEquals(2, $app->sellIn);
+    }
+
+
+    public function test_conjuras_24q_n3d()
+    {
+        $app = GildedRose::of('Conjuras', 24, -3);
+        $app->tick();
+        $this->assertEquals(20, $app->quality);
+        $this->assertEquals(-4, $app->sellIn);
+    }
+
 }
