@@ -1,15 +1,10 @@
-# The Gilded Rose Kata
-
-## Setup
-
-This repository includes the initial setup for this Kata, including the specs. It uses the [Kahlan library](http://kahlan.readthedocs.org/en/latest/), which you might not be familiar with. But, don't worry, there's nothing really to learn. Review the specs, and you'll understand the basic syntax in less than a minute.
+# The Gilded Rose Kata - Variance 02
 
 Your job is to:
 
 1. Refactor the monstrous code in the `GildedRose.php` class.
-2. Add a new item type, "Conjured". The specs for this item are commented out in the `GildedRoseSpec.php` file.
-
-When finished (or for help), you may review the solution by switching to the "solution" branch of this repo.
+2. Add 'Conjuras'
+2. Make sure you test all the scenarios. This may be manual testing or automated tests.
 
 ## Rules
 
@@ -31,6 +26,8 @@ Pretty simple, right? Well this is where it gets interesting:
 - The Quality of an item is never more than 50
 - "Sulfuras", being a legendary item, never has to be sold or decreases in Quality
 - "Backstage passes", like aged brie, increases in Quality as it's SellIn value approaches; Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but Quality drops to 0 after the concert
+
+## To add
 
 We have recently signed a supplier of conjured items. This requires an update to our system:
 
