@@ -6,5 +6,8 @@
         "psr-4": {
             "App\\": "src"
         }
+    },
+    "config": {
+        "bin-dir": "bin"
     }
 }
