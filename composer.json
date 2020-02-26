@@ -1,6 +1,6 @@
 {
     "require-dev": {
-        "crysalead/kahlan": "^1.2"
+        "kahlan/kahlan": "^1.2"
     },
     "autoload": {
         "psr-4": {
