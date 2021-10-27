@@ -2,6 +2,8 @@
 
 namespace App;
 
+require_once './vendor/autoload.php';
+
 class GildedRose
 {
     public static function of($name, $quality, $sellIn)
