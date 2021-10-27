@@ -1,6 +1,7 @@
 {
     "require-dev": {
-        "kahlan/kahlan": "^1.2"
+        "kahlan/kahlan": "^1.2",
+        "phpstan/phpstan": "^0.12.99"
     },
     "autoload": {
         "psr-4": {
