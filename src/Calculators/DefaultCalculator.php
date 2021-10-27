@@ -4,17 +4,24 @@ namespace App\Calculators;
 
 class DefaultCalculator implements CalculatorInterface
 {
-    public string $name;
-
-    public int $quality;
-
-    public int $sellIn;
+    protected string $name;
+    protected int $quality;
+    protected int $sellIn;
 
     public function __construct(string $name, int $quality, int $sellIn)
     {
         $this->name = $name;
         $this->quality = $quality;
         $this->sellIn = $sellIn;
+    }
+
+    public function __get(string $property): null|string|int
+    {
+        if (!in_array($property, ['name', 'quality', 'sellIn'], true)) {
+            return null;
+        }
+
+        return $this->$property;
     }
 
     // Removed return typehint due to Kahlan related Fatal error: A void function must not return a value
