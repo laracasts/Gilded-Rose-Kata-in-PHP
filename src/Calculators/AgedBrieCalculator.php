@@ -6,7 +6,7 @@ namespace App\Calculators;
 class AgedBrieCalculator extends DefaultCalculator
 {
 
-    public function tick(): void
+    public function tick()
     {
         if ($this->quality < 50) {
             $this->quality = $this->quality + 1;

@@ -17,7 +17,8 @@ class DefaultCalculator
         $this->sellIn = $sellIn;
     }
 
-    public function tick(): void
+    // Removed return typehint due to Kahlan related Fatal error: A void function must not return a value
+    public function tick()
     {
         if ($this->name != 'Aged Brie' and $this->name != 'Backstage passes to a TAFKAL80ETC concert') {
             if ($this->quality > 0) {
