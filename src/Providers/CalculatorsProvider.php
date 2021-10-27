@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Calculators\CalculatorInterface;
 
 class CalculatorsProvider
 {
@@ -20,7 +21,7 @@ class CalculatorsProvider
         return '\App\Calculators\DefaultCalculator';
     }
 
-    public static function init(string $name, int $quality, int $sellIn)
+    public static function init(string $name, int $quality, int $sellIn): CalculatorInterface
     {
         $className = self::getCalculatorClassFromProductName($name);
         return new $className($name, $quality, $sellIn);

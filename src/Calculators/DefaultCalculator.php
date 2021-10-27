@@ -2,7 +2,7 @@
 
 namespace App\Calculators;
 
-class DefaultCalculator
+class DefaultCalculator implements CalculatorInterface
 {
     public string $name;
 
