@@ -11,6 +11,10 @@
     {
       "name": "Backstage passes to a TAFKAL80ETC concert",
       "calculator": "\\App\\Calculators\\BackstageCalculator"
+    },
+    {
+      "name": "Conjured Mana Cake",
+      "calculator": "\\App\\Calculators\\ConjuredCalculator"
     }
   ]
 }
