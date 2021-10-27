@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "name": "Aged Brie",
+      "calculator": "\\App\\Calculators\\AgedBrieCalculator"
+    },
+    {
+      "name": "Sulfuras, Hand of Ragnaros",
+      "calculator": "\\App\\Calculators\\SulfurasCalculator"
+    },
+    {
+      "name": "Backstage passes to a TAFKAL80ETC concert",
+      "calculator": "\\App\\Calculators\\BackstageCalculator"
+    }
+  ]
+}
