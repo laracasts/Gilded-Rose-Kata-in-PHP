@@ -27,7 +27,6 @@ class DefaultCalculator implements CalculatorInterface
     // Removed return typehint due to Kahlan related Fatal error: A void function must not return a value
     public function tick()
     {
-
         if ($this->quality > 0) {
             $this->quality = $this->quality - 1;
         }

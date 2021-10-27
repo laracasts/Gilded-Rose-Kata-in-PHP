@@ -2,7 +2,6 @@
 
 namespace App\Calculators;
 
-
 class SulfurasCalculator extends DefaultCalculator
 {
 

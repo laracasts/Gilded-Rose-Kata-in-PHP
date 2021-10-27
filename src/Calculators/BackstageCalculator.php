@@ -2,10 +2,8 @@
 
 namespace App\Calculators;
 
-
 class BackstageCalculator extends DefaultCalculator
 {
-
     public function tick()
     {
         if ($this->quality < 50) {

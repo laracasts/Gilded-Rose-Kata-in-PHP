@@ -6,7 +6,6 @@ use App\Calculators\CalculatorInterface;
 
 class CalculatorsProvider
 {
-
     private static function getCalculatorClassFromProductName(string $name): string
     {
         $config = json_decode(file_get_contents('./config/products.json'), true);
